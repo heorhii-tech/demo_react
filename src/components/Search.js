@@ -71,7 +71,7 @@ export default function Search() {
 
                     }
 
-                    <input className={'input'} value={username} type="text" onChange={handleUsernameChange}/>
+                    <input className={'input'} maxLength={30} value={username} type="text" onChange={handleUsernameChange}/>
                     <p>{error}</p>
 
                     <button className={'button'} onClick={fetchData}>Submit</button>
